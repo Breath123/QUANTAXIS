@@ -130,7 +130,7 @@ def QA_SU_save_stock_day(client=DATABASE, ui_log=None, ui_progress=None):
                                 str(code),
                                 QA_util_get_next_day(start_date),
                                 end_date,
-                                '00'
+                                '00' # JBH
                             )
                         )
                     )
@@ -152,7 +152,7 @@ def QA_SU_save_stock_day(client=DATABASE, ui_log=None, ui_progress=None):
                                 str(code),
                                 start_date,
                                 end_date,
-                                '00'
+                                '00' # JBH
                             )
                         )
                     )

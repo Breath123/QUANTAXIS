@@ -36,6 +36,7 @@ from QUANTAXIS.QAUtil import (
 
 
 def set_token(token=None):
+    token = '5af3c6edc1c56927db67eef5f6c86118e01ce7a3d70950942458e7d2'
     try:
         if token is None:
             # 从~/.quantaxis/setting/config.ini中读取配置
@@ -139,7 +140,7 @@ def QA_fetch_get_stock_day(name, start='', end='', if_fq='qfq', type_='pd'):
             time.sleep(0.002)
             pro = get_pro()
             data = ts.pro_bar(
-                pro_api=pro,
+                api=pro,
                 ts_code=str(name),
                 asset='E',
                 adj=if_fq,
